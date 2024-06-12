@@ -32,19 +32,37 @@
         <h1>componentes Bootstrap</h1>
         <p>prueba de alerts, popover, toast, offcanvas.Modificar contendio de todos los componentes enunciados con atributos data.</p>
       </div>
-      <div class="col-md-6 bg-black">
-      <button id="alert"></button>
+      <div class="col-md-6 mt-2">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="hola">
+          <p>alert</p>
+        </button>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-2">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="hola">
+          <p>popover</p> 
+        </button>
+      </div>
+      <div class="col-md-6 mt-2">
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-md-6 mt-2">
         <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="hola">
           Popover on right
         </button>
-      </div>
-      <div class="col-md-6">
-        <button id="toast"></button>
-      </div>
-      <div class="col-md-6">s
-        <button id="offcanvas"></button>
       </div>
     </div>
   </div>
